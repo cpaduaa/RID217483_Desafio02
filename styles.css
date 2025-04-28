@@ -1,0 +1,249 @@
+html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+#presentation-container {
+    background-color: #02A28F;
+}
+  
+.presentation {
+    color: #ffffff;
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+h1, h2, h3, p, span {
+    margin: 0;
+}
+  
+.main-content {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 5rem 9.5rem 0;
+}
+  
+.container-imagem {
+    position: relative;
+    width: 80%;
+}
+  
+.container-imagem > img {
+    width: 80%;
+    height: 50rem;
+    border-radius: 0.5rem;
+}
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 50rem;
+    border-radius: 0.5rem;
+    background: linear-gradient(180deg, rgba(102,102,102,0) 0%, #000000 100%);
+}
+  
+.container-title {
+    position: absolute;
+    bottom: 1rem;
+    left: 2rem;
+    color: #ffffff;
+}
+  
+.container-right {
+    width: 22.5rem;
+    background: #ffffff;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+  
+.container-right > h2 {
+    background-color: #02A28F;
+    color: #ffffff;
+    padding: 0.8rem 1.2rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+  
+.container-post {
+    list-style: none;
+    padding: 0;
+}
+  
+.post-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+  
+.post-item > img {
+    width: 8.5rem;
+    border-radius: 0.3rem;
+}
+  
+.post-text {
+    display: flex;
+    flex-direction: column;
+}
+  
+.recent-categories {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 5rem 9.5rem 0;
+}
+  
+.posts-recentes {
+    flex: 2;
+}
+  
+.recentes-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #02A28F;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+  
+.recentes-header > h2, .recentes-header a {
+    color: #ffffff;
+    font-size: 1rem;
+}
+  
+.recentes-header > a {
+    text-decoration: none;
+}
+  
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+}
+  
+.post-card {
+    background: #ffffff;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 0.125rem 0.3125rem rgba(0,0,0,0.1);
+}
+  
+.post-card > img {
+    width: 100%;
+    border-radius: 0.5rem;
+    height: 12rem;
+    object-fit: cover;
+}
+  
+.categoria {
+    color: #02A28F;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+}
+  
+#categorias {
+    flex: 1;
+    background: #ffffff;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+  
+#categorias > h2 {
+    background-color: #02A28F;
+    color: #ffffff;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-size: 1.25rem;
+}
+  
+#categorias > ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+  
+#categorias > li {
+    margin-bottom: 0.5rem;
+}
+  
+.footer {
+    background-color: #02A28F;
+    text-align: center;
+    padding: 1rem;
+    color: #ffffff;
+    font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+    .main-content, .recent-categories {
+      flex-direction: column;
+      margin: 2rem 1rem;
+      gap: 2rem;
+    }
+  
+    .container-imagem {
+      width: 100%;
+    }
+  
+    .container-imagem > img {
+      width: 100%;
+      height: auto;
+      border-radius: 1rem;
+    }
+    .overlay {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        border-radius: 0.5rem;
+        background: linear-gradient(180deg, rgba(102,102,102,0) 0%, #000000 100%);
+    }
+  
+    .containar-rigth, .posts-recentes,
+    #categorias {
+      width: 100%;
+    }
+  
+    .posts-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .recentes-header {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .recentes-header > h2 {
+      font-size: 1.8rem;
+    }
+  
+    .recentes-header > a {
+      font-size: 1.6rem;
+    }
+  
+    .post-card {
+      padding: 1.5rem;
+      border-radius: 1rem;
+    }
+  
+    .footer {
+      width: 100%;
+      font-size: 1.2rem;
+      padding: 2rem 0;
+      text-align: center;
+    }
+}
